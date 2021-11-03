@@ -15,6 +15,7 @@ alt.on('keyup', key => {
             alt.clearInterval(crawlInterval);
             native.clearPedTasks(player.scriptID);
             native.clearPedSecondaryTask(player.scriptID);
+            player.crawl = false;
         } else crawl();
     }
 });
